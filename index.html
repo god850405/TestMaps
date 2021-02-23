@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- jsFiddle will insert css and js -->
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="wrap">
+    <div class="box"> 
+      <div id="map"></div>
+      <div class="content">
+        <div class="p1">
+          <input class="drawBtn" type="button" value="畫線" onclick="addLine()">
+           <input class="drawBtn" type="button" value="清除線條" onclick="removeLine()">
+        </div>
+        <div class="p2">
+           <input class="drawBtn" type="button" value="顯示旗幟" onclick="showMarkers()">
+           <input class="drawBtn" type="button" value="隱藏旗幟" onclick="clearMarkers()">
+           <input class="drawBtn" type="button" value="刪除旗幟" onclick="deleteMarkers()">
+        </div>     
+        <div class="p3">
+          <div class="p31">
+            <label class="iconResource">標記圖片來源：</label>
+          <input class="inputUri" type="text" id="inputUri" value="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png" placeholder="圖片網址">   
+          </div>
+          <div class="p32">
+            <input class="drawBtn" type="button" value="設定" onclick="setMarkersIcon()">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+    
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMskbBMgOsdo14FBdG5Ds_urnj3lc3Wl8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
