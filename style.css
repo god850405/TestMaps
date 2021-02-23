@@ -1,0 +1,99 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted #000;
+}
+#map {
+  height: 100%;
+  width: 60%;
+}
+.content {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #fd88;
+  border-left: 1px solid #000;
+}
+.p1 {
+  height: 40%;
+  margin: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p2 {
+  height: 40%;
+  margin: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p3 {
+  height: 20%;
+  margin: auto;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p31,
+.p32 {
+  padding: 1em;
+}
+.drawBtn {
+  background-color: #dd5;
+  border: 0 none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0.1em;
+}
+.iconResource {
+  width: 100%;
+  /* background-color: #ddd; */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.inputUri {
+  width: 100%;
+  background-color: #dd5;
+  border: 0 none;
+  border-radius: 5px;
+  font-weight: bold;
+  /* font-size: 1em; */
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
